@@ -396,9 +396,18 @@
 				<div class="footer-mailing-list">
 					<h3 class="footer-mailing-title">Підпишіться на розсилку</h3>
 					<form class="footer-mailing-form">					
-						<input type="email" name="footer-mailing" class="email-input" placeholder="E-mail">
+						<input type="email" 
+						name="footer-mailing" 
+						class="mailing-input" 
+						id="footer-mailing"
+						placeholder="E-mail"
+						required>
 						<label for="footer-mailing"></label>
-						<button type="submit" class="form-btn">Підписатися</button>
+						<button type="submit" class="mailing-btn form-btn">Підписатися
+							<svg class="mailing-icon-send" width="24px" height="24px">
+								<use href="./images/icons.svg#icon-send"></use>
+							</svg>
+						</button>
 					</form>
 				</div>				
 			</div>
@@ -466,7 +475,7 @@
 									<use href="./images/icons.svg#icon-check"></use>
 								</svg>
 							</span>
-							Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+							Погоджуюся з розсилкою та приймаю <a href="" class="policy-link">Умови договору</a></label>
 					</div>
 					
 					<button type="submit" class="form-btn">Відправити</button>

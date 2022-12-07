@@ -550,7 +550,7 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
 }
 
-.email-input {
+.mailing-input {
     width: 358px;
     margin-right: 12px;
     padding-left: 16px;
@@ -559,6 +559,15 @@ border-radius: 0px 0px 4px 4px;
     border-radius: 4px;
     background-color: inherit;
     color: #ffffff;
+}
+
+.mailing-btn {
+    display: flex;
+}
+
+.mailing-icon-send {
+    margin-left: 10px;
+    fill: #FFFFFF;
 }
 
 /*--------------------- Стиль Портфоліо ----------------------*/
@@ -787,6 +796,15 @@ border-radius: 0px 0px 4px 4px;
     padding-left: 42px;
     outline: transparent;
     cursor: pointer;
+    transition: border var(--tra);
+}
+
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill var(--tra);
 }
 
 .modal-input:focus {
@@ -797,13 +815,6 @@ border-radius: 0px 0px 4px 4px;
     fill: var(--color-hover);
 }
 
-.modal-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .modal-comment {
     width: 100%;
     height: 120px;
@@ -812,10 +823,12 @@ border-radius: 0px 0px 4px 4px;
     border-radius: 4px;
     resize: none;
     cursor: pointer;
+    transition: outline var(--tra);
 }
 
 .modal-comment:focus {
-    border: 1px solid var(--color-hover);
+    border: none;
+    outline: 1px solid var(--color-hover);
 }
 
 .checkbox-policy {
@@ -850,6 +863,20 @@ border-radius: 0px 0px 4px 4px;
     justify-content: center;
     border-radius: 2px;
     fill: transparent;
+    transition: background-color var(--tra),
+    fill var(--tra), border var(--tra),
+    border-color var(--tra);
+}
+
+.policy-link {
+    display: block;
+    margin-left: 7px;
+    color: var(--color-hover);
+    text-decoration: underline;    
+}
+
+.modal-check {
+    
 }
 
 .modal-check:checked + .check-text span {
