@@ -812,10 +812,16 @@ border-radius: 0px 0px 4px 4px;
     resize: none;
 }
 
+.modal-comment:focus {
+    border: 1px solid var(--color-hover);
+}
 
 .checkbox-policy {
-    width: 100%;
+    width: 425px;
     height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -856,6 +862,8 @@ border-radius: 0px 0px 4px 4px;
 .form-btn {
     width: 200px;
     height: 50px;
+    margin-left: auto;
+    margin-right: auto;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -865,7 +873,7 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.88;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     letter-spacing: 0.06em;    
     color: #FFFFFF;
     border: none;
