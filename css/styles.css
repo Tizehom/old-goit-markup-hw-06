@@ -489,10 +489,12 @@ border-radius: 0px 0px 4px 4px;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-soc {    
+.footer-soc { 
+    margin-right: 93px;   
 }
 
-.footer-soc-title {
+.footer-soc-title,
+.footer-mailing-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -533,6 +535,30 @@ border-radius: 0px 0px 4px 4px;
 .footer-soc-link:hover,
 .footer-soc-link:focus {
     background-color: var(--color-hover);
+}
+
+.footer-mailing-list {
+    width: 570px;
+    display: block;
+}
+
+.footer-mailing-title {
+    margin-bottom: 20px;
+}
+
+.footer-mailing-form {
+    display: flex;
+}
+
+.email-input {
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+    color: #ffffff;
 }
 
 /*--------------------- Стиль Портфоліо ----------------------*/
@@ -709,22 +735,25 @@ border-radius: 0px 0px 4px 4px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
-    transition: background-color var(--tra),
-    fill var(--tra);
+    transition: fill var(--tra);
 }
 
 .modal-btn-close:hover,
 .modal-btn-close:focus {
-    background-color: var(--color-hover);
-    fill: #ffffff;
+    fill: var(--color-hover);
 }
 
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.modal-field {
+    margin-bottom: 10px;
 }
 
 .modal-title {   
@@ -737,6 +766,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .input-lable {
+    display: block;
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -746,8 +776,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .input-wrapper {    
-    position: relative;
-    margin-bottom: 28px;
+    position: relative;    
 }
 
 .modal-input {
@@ -783,6 +812,7 @@ border-radius: 0px 0px 4px 4px;
     resize: none;
 }
 
+
 .checkbox-policy {
     width: 100%;
     height: 24px;
@@ -799,14 +829,6 @@ border-radius: 0px 0px 4px 4px;
     letter-spacing: 0.03em;
     color: #757575;
 }
-
-/* .check-text::before {
-    content: "";
-    width: 16px;
-    height: 15px;
-    border: 2px solid #212121;
-    border-radius: 2px;
-} */
 
 .check-text span {
     width: 16px;
@@ -846,4 +868,6 @@ border-radius: 0px 0px 4px 4px;
     text-align: center;
     letter-spacing: 0.06em;    
     color: #FFFFFF;
+    border: none;
 }
+

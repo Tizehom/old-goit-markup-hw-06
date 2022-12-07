@@ -393,6 +393,13 @@
 						</li>
 					</ul>
 				</div>
+				<div class="footer-mailing-list">
+					<h3 class="footer-mailing-title">Підпишіться на розсилку</h3>
+					<form class="footer-mailing-form">					
+						<input type="text" name="" class="email-input" placeholder="E-mail">
+						<button type="submit" class="form-btn">Підписатися</button>
+					</form>
+				</div>				
 			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
@@ -418,19 +425,34 @@
 							</svg>
 						</div>
 					</div>
-					
-					
-					<input 
-					type="text" 
-					name="user-tel" 
-					class="modal-input" 
-					placeholder=" "
-					>
-					<input type="text" 
-					name="user-email" 
-					class="modal-input" 
-					placeholder=" "
-					>
+					<div class="modal-field">
+						<label for="user-tel" class="input-lable">Телефон</label>
+						<div class="input-wrapper">
+							<input type="text" 
+							name="user-tel" 
+							class="modal-input" 
+							id="user-tel" 
+							placeholder=" "
+							required>
+							<svg class="modal-icon" width="18px" height="18px">
+								<use href="./images/icons.svg#icon-phone"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="modal-field">
+						<label for="user-email" class="input-lable">Пошта</label>
+						<div class="input-wrapper">
+							<input type="text" 
+							name="user-email" 
+							class="modal-input" 
+							id="user-email" 
+							placeholder=" "
+							required>
+							<svg class="modal-icon" width="18px" height="18px">
+								<use href="./images/icons.svg#icon-email"></use>
+							</svg>
+						</div>
+					</div>
 					<div class="modal-field">
 						<label for="user-text" class="input-lable">Коментар</label>
 						<textarea name="user-text" id="user-text" class="modal-comment" placeholder="Введіть текст"></textarea>
